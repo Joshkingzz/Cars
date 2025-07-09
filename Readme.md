@@ -2,7 +2,7 @@
 
 This project explores an extensive car sales dataset using **SQL** and **Python** to generate insights into pricing, performance, feature influence, and accident impact. The project is structured into three main folders: `data`, `sql`, and `python`, each serving a unique function in the analytical pipeline.
 
-While all data modeling, transformation, and querying were done locally, **final reporting** was hosted at 🔗 **Dashboard & Report:** [View Full Report](https://github.com/Joshkingzz/Cars/blob/main/report.md)
+While all data modeling, transformation, and querying were done locally, **final reporting** was hosted at 🔗 **Report:** [View Full Report](https://github.com/Joshkingzz/Cars/blob/main/report.md)
 
 ---
 
