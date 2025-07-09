@@ -2,9 +2,7 @@
 
 This project explores an extensive car sales dataset using **SQL** and **Python** to generate insights into pricing, performance, feature influence, and accident impact. The project is structured into three main folders: `data`, `sql`, and `python`, each serving a unique function in the analytical pipeline.
 
-While all data modeling, transformation, and querying were done locally, **final reporting** was hosted on my portfolio website.
-
-🔗 **Dashboard & Report:** [View Full Report](https://www.datascienceportfol.io/joshkvngs)
+While all data modeling, transformation, and querying were done locally, **final reporting** was hosted at 🔗 **Dashboard & Report:** [View Full Report](https://github.com/Joshkingzz/Cars/blob/main/report.md)
 
 ---
 
@@ -61,7 +59,7 @@ The dataset contains over **23,000 car entries** joined across various dimension
 
 * Advanced **SQL Joins**, **Window Functions**, and **Groupings**
 * Data wrangling and transformation in **Python**
-* Categorical encoding, type conversion, and normalization
+* Data Extraction, cleaning, feature engineering and data normalization
 * KPI generation: median price, mileage impact, feature ranking
 
 ---
