@@ -15,7 +15,8 @@ cars/
 │
 ├── data/        → Cleaned & normalized datasets  
 ├── sql/         → SQL scripts for analysis & feature insights  
-├── python/      → Data cleaning and transformation scripts  
+├── python/      → Data cleaning and transformation scripts
+├── Report/      → contains descriptive analysis and answers to questions asked by client
 └── README.md    → Project overview
 ```
 
