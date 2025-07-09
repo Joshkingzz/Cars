@@ -1,0 +1,121 @@
+Car ModelID,Car Model,Car MakeID
+0,3 Series,2
+1,300,7
+2,488 GTB,8
+3,5 Series,2
+4,500,9
+5,500X,9
+6,570S,19
+7,720S,19
+8,911,23
+9,A-Class,20
+10,A3,1
+11,A4,1
+12,A6,1
+13,Accord,11
+14,Altima,22
+15,Aventador,15
+16,Beetle,28
+17,Bentayga,3
+18,C-Class,20
+19,CR-V,11
+20,CX-5,18
+21,CX-9,18
+22,Camaro,6
+23,Camry,27
+24,Cayenne,23
+25,Charger,7
+26,Chiron,4
+27,Civic,11
+28,Continental GT,3
+29,Corolla,27
+30,Crosstrek,25
+31,Cruze,5
+32,Cullinan,24
+33,DB11,0
+34,DBX,0
+35,Defender,16
+36,Discovery,16
+37,Doblo,9
+38,Dodge Durango,7
+39,E-Class,20
+40,Elantra,12
+41,Equinox,6
+42,Escape,10
+43,Evoque,16
+44,Explorer,10
+45,F-150,10
+46,F-Type,13
+47,F8 Tributo,8
+48,Fit,11
+49,Flying Spur,3
+50,Focus,10
+51,Forester,25
+52,Forte,14
+53,G-Class,21
+54,GLC,20
+55,Ghibli,17
+56,Ghost,24
+57,Golf,28
+58,Highlander,27
+59,Huracan,15
+60,I-Pace,13
+61,Impreza,25
+62,Jetta,28
+63,Kona,12
+64,Leaf,22
+65,Legacy,25
+66,Levante,17
+67,MX-5 Miata,18
+68,Macan,23
+69,Malibu,6
+70,Maxima,22
+71,Maybach,21
+72,Mazda3,18
+73,Mazda6,18
+74,Model 3,26
+75,Model S,26
+76,Model X,26
+77,Model Y,26
+78,Mustang,10
+79,Optima,14
+80,Outback,25
+81,P1,19
+82,Pacifica,7
+83,Panamera,23
+84,Panda,9
+85,Passat,28
+86,Phantom,24
+87,Pilot,11
+88,Portofino,8
+89,Q5,1
+90,Q7,1
+91,Quattroporte,17
+92,RAV4,27
+93,Range Rover,16
+94,Rogue,22
+95,S-Class,20
+96,Santa Fe,12
+97,Sentra,22
+98,Silverado,6
+99,Sonata,12
+100,Sorento,14
+101,Soul,14
+102,Sportage,14
+103,Tacoma,27
+104,Taycan,23
+105,Tiguan,28
+106,Tipo,9
+107,Traverse,5
+108,Tucson,12
+109,Urus,15
+110,Vantage,0
+111,Velar,16
+112,Veyron,4
+113,Voyager,7
+114,X3,2
+115,X5,2
+116,X7,2
+117,XE,13
+118,XF,13
+119,XJ,13
