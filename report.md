@@ -270,7 +270,10 @@ from fact a
 		order by occurence desc
 ```
 
-* **Bluetooth**, **Backup Camera**, and **GPS** were the most frequent features listed.
+![Image](https://github.com/user-attachments/assets/c5c45b27-80ee-45b5-95f8-69a7e369118f)
+
+
+* **Leather Seat**, **Heated seat**, and **Sunroof** were the most frequent features listed.
 
 #### B. Premium vs. Basic Features
 ```
@@ -294,10 +297,12 @@ from fact a
 		group by b.car_make, c.car_model, a.feature_type
 		order by b.car_make, c.car_model, a.feature_type
 ```
+![Image](https://github.com/user-attachments/assets/dd96b694-ce62-4ebe-ab87-f97b6d48990b)
 
 * Cars with **premium features** (defined as 2+ listed options) had significantly **higher average prices**, especially among newer models.
 
 ---
+
 
 ### 6. 🎨 Color & Aesthetics
 
@@ -316,8 +321,10 @@ group by color
 order by price desc
 ```
 
-* **Black**, **White**, and **Metallic Grey** fetched **higher median prices**.
-* Bright colors like **Yellow** or **Green** had mixed pricing patterns.
+![Image](https://github.com/user-attachments/assets/a409f4ba-bcb5-4302-859f-5de4b56b4c62)
+
+* **Silver**, **Green**, and **Blue** fetched **higher median prices**.
+
 
 #### B. Most and Least Common Colors
 ```
@@ -327,9 +334,9 @@ from fact a
 		group by b.color
 		order by occurence desc	
 ```
-
-* **White** was the **most common**, followed by **Silver** and **Black**.
-* **Brown** and **Purple** were the least common.
+![Image](https://github.com/user-attachments/assets/82722123-eda3-4006-a050-5edee6891d21)
+* **Blue** was the **most common**, followed by **Green** and **White**.
+* **Brown** and **Yellow** were the least common.
 
 ---
 
