@@ -8,7 +8,7 @@ This analysis provides a comprehensive look into how different attributes of car
 
 ## 🛠️ Methodology
 
-**Data Source**: The data was collected from a normalized relational database with the following key tables:
+**Data Source**: The data was collected and normalised into a database with the following key tables:
 ```
 select * from fact a
 inner join accident b on a.AccidentID = b.AccidentID
@@ -58,8 +58,26 @@ from stats
 group by car_make, car_model
 order by average_price desc
 ```
+![Image](https://github.com/user-attachments/assets/052a99a5-0201-4856-b934-5e11c1470f98)![Image](https://github.com/user-attachments/assets/fa7b1271-b79d-40ba-8d5f-eef25c50bc49)![Image](https://github.com/user-attachments/assets/50e8a703-fefc-4216-b34c-2ce1891db8c4)![Image](https://github.com/user-attachments/assets/ff529060-b2da-4d8d-8cb4-83b67fe5b93a)![Image](https://github.com/user-attachments/assets/164f09c0-4675-4948-b2e2-6897916c6fed)![Image](https://github.com/user-attachments/assets/edb1fd48-d484-492a-b339-fb21fd0e8d22)![Image](https://github.com/user-attachments/assets/88573ef9-73d0-44d9-b51b-8665c2e90f59)
 
-* Models from luxury brands (e.g., BMW, Mercedes) showed higher max prices, while common brands like Toyota or Honda had more stable medians.
+* Average Price
+•	General Range:
+o	Most mainstream vehicles: $21,000 – $25,000
+o	Luxury brands (Porsche, Tesla, Mercedes-Benz): $80,000 – $100,000
+o	Ultra-luxury brands (Bugatti, Bentley, McLaren): $190,000 – $210,000+
+* Maximum Price
+•	Peak Values:
+o	Many luxury and exotic models top out near $299,000
+o	Most mainstream brands max around $49,000 – $50,000
+* Median Price
+•	Typical Midpoints:
+o	Mainstream cars: $21,000 – $24,000
+o	Mid-luxury cars: $24,000 – $26,000
+o	Exotic/luxury brands maintain high medians around $190,000 – $215,000
+
+* Luxury cars (e.g., Bugatti, Aston Martin) dominate the top of all price metrics, Porsche and Tesla show large gaps between average and median, indicating multiple trims from entry-level to premium, Mainstream brands (Toyota, Honda, Hyundai) offer stable, consistent pricing across all metrics. Budget cars (Fiat, Nissan) stay within a tight range with low max and median values.
+
+
 
 #### B. Impact of Mileage on Price
 ```
@@ -69,8 +87,10 @@ from fact a
 	group by b.car_make
 	order by mileage asc
 ```
+![Image](https://github.com/user-attachments/assets/808330da-8341-408f-9453-1a6025f5765d)
+![Image](https://github.com/user-attachments/assets/a91b2ba9-99f2-4676-ac60-0768ccc27b97)
 
-* Generally, **higher mileage** correlated with **lower average prices**, particularly for brands like Toyota and Ford.
+* Generally, **higher mileage** correlated with **lower average prices**, particularly.
 * A clear **inverse relationship** was seen—reinforcing that lower mileage increases resale value.
 
 #### C. Price by Fuel Type
@@ -82,9 +102,10 @@ from fact a
 	group by b.Fuel_Type
 	order by average_price desc
 ```
+![Image](https://github.com/user-attachments/assets/6d452567-56de-410f-9d72-5d7bc94a662c)
 
-* **Electric** and **hybrid** vehicles tended to be **more expensive** on average.
 * **Petrol** was the most common and showed moderate pricing.
+* **Petrol** vehicles have the highest average price by far, Likely due to luxury brands (e.g., Ferrari, McLaren, Bugatti) still using petrol engines. **Electric, Diesel, and Hybrid** cars are priced within a similar mid-range ($45k–$47k). **Gasoline** (likely standard internal combustion) has the lowest average price, around $22,763.
 
 ---
 
@@ -110,9 +131,11 @@ from comparison
 group by condition
 order by condition
 ```
+![Image](https://github.com/user-attachments/assets/a3f2d17f-1b61-4088-a504-2783855ee325)
 
-* Cars categorized as **brand new** had significantly **higher average and median prices**.
-* **Used** cars, especially in poor condition, showed steep drops in value.
+* **Like New cars** have the highest average and median prices, slightly more than both **New and Used cars**, This could reflect a concentration of high-end or luxury models in that category.
+* **New cars** have the lowest minimum price, likely from entry-level vehicles or promotional offers.
+* **Used cars** have the lowest median price, indicating more affordability and possibly a wider range of older, depreciated models.
 
 #### B. Accident History Impact
 ```
@@ -123,6 +146,7 @@ from fact a
 	group by b.car_make, c.accident
 	order by b.car_make, c.accident asc
 ```
+![Image](https://github.com/user-attachments/assets/e8a25553-a566-4e7a-ae8a-1afd4c78b46f)
 
 * Cars with accident records consistently sold for **less**, sometimes up to **15–20% lower** in price depending on make.
 
@@ -135,6 +159,7 @@ from fact a
 	group by b.car_make, c.accident
 	order by b.car_make, c.accident
 ```
+![Image](https://github.com/user-attachments/assets/712e935e-b25e-47c2-bf0e-480211f3946a)
 
 * Cars **without accidents** had slightly **higher mileage averages**, suggesting more regular use but fewer critical events.
 
@@ -156,7 +181,9 @@ from (
 		from fact a
 		inner join transmission b on a.TransmissionID = b.TransmissionID) as subquery
 ```
-* Around **X% were automatic** and **Y% manual** (replace X & Y with results).
+![Image](https://github.com/user-attachments/assets/24959633-53a8-4ce1-9cdb-314bfd86ffb1)
+
+* Around **50.2% were automatic** and **49.8% manual**.
 * Automatic transmissions were more dominant, especially in newer cars.
 
 #### B. Most Expensive Fuel Type
@@ -167,7 +194,9 @@ from fact a
 		group by b.Fuel_Type
 	order by average_price desc
 ```
-* **Electric vehicles** ranked highest in average pricing.
+![Image](https://github.com/user-attachments/assets/727953cc-ad36-44eb-bf54-6816d705b24e)
+
+* **Petrol vehicles** ranked highest in average pricing.
 
 #### C. Common Fuel & Transmission Combos
 ```
@@ -180,7 +209,9 @@ from fact a
 	order by combination_count desc
 ```
 
-* **Petrol-Automatic** and **Diesel-Manual** were the most common pairings.
+![Image](https://github.com/user-attachments/assets/357e3105-d369-4770-a724-52cd14f8f4d8)
+
+* **Diesel-Automatic** and **Hybrid-Automatic** were the most common pairings.
 
 ---
 
@@ -195,7 +226,9 @@ from fact a
 	order by car_frequency desc
 ```
 
-* Top brands included **Toyota**, **Honda**, and **Ford**—all with high frequency in listings.
+![Image](https://github.com/user-attachments/assets/3e5951d6-9ed9-4941-818d-81770224a4e5)
+
+* Top brands included **Porsce**, **BMW**, and **Chevy** all with high frequency in listings.
 
 #### B. Most Expensive Make/Model Combos
 ```
@@ -206,7 +239,9 @@ from fact a
 		group by b.car_make,c. car_model
 		order by most_expensive_cars desc
 ```
-* Luxury combinations like **Mercedes-Benz S-Class** and **BMW X5** had the highest total listed prices.
+![Image](https://github.com/user-attachments/assets/82985674-0a7d-458c-b986-d0b8d0cfb391)
+
+* Luxury combinations like **Bugatti-Veyron** and **Bugatti-Chiron** had the highest total listed prices.
 
 #### C. Electric/Hybrid Popularity by Brand
 ```
@@ -218,8 +253,9 @@ from fact a
 		group by b.car_make, c.fuel_type
 		order by percentage desc;
 ```
+![Image](https://github.com/user-attachments/assets/665f9781-e260-4ac1-b151-4ce017291f2c)
 
-* **Tesla**, **Toyota**, and **Hyundai** had the **highest percentage** of electric or hybrid entries.
+* **Porsche**, **Chrysler**, and **Honda** had the **highest percentage** of electric or hybrid entries.
 
 ---
 
