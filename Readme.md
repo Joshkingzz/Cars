@@ -48,10 +48,11 @@ The dataset contains over **23,000 car entries** joined across various dimension
 
 ## 🛠 Tools & Technologies Used
 
-| Tool         | Purpose                        |
-| ------------ | ------------------------------ |
-| **SQL**      | Data querying and aggregation  |
-| **Python**   | Data cleaning & transformation |
+| Tool                      | Purpose                        |
+| ------------------------- | ------------------------------ |
+| **SQL**                   | Data querying and aggregation  |
+| **Python**                | Data cleaning & transformation |
+| **Excel Power Query**     | Data Normalisation             |
 
 
 ---
