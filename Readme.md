@@ -11,11 +11,12 @@ While all data modeling, transformation, and querying were done locally, **final
 ```
 cars/
 │
-├── 📂data/        → Cleaned & normalized datasets  
+├── 📂data/        → Cleaned & normalized datasets
+├── 📂Images/      → Images and screenshots 
 ├── 📂sql/         → SQL scripts for analysis & feature insights  
 ├── 📂python/      → Data cleaning and transformation scripts
-├── 📂Report/      → contains descriptive analysis and answers to questions asked by client
-└── 📂README.md    → Project overview
+├── Report.md      → contains descriptive analysis and answers to questions asked by client
+└── README.md    → Project overview
 ```
 
 ---
